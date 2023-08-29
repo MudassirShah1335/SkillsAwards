@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "../src/Pages/Home";
+import Biglmg from "./Pages/Biglmg";
+import BenefitSec from "./Compunent/BenefitSec";
+import Choseus from "./Pages/Choseus";
+import EducationalPartner from "./Pages/EducationalPartner";
+import Globalskill from "./Pages/Globalskill";
+import JoinOur from "./Pages/JoinOur";
+import ChangeRoad from "./Pages/ChangeRoad";
+import Contactus from "./Pages/Contactus";
+import { Formik } from "formik";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Formik /> */}
+      <Home />
+      <BenefitSec />
+      <Biglmg />
+      <Choseus />
+      <EducationalPartner />
+      <Globalskill />
+      <JoinOur />
+      <ChangeRoad />
+      <Contactus />
     </div>
   );
-}
+};
 
 export default App;
